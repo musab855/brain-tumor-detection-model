@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Dataset | Brain Tumor Detection</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/external.css') }}">
+</head>
+<body class="bg-light">
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3">
+      <div class="container-fluid">
+        <img src="{{ url_for('static', filename='icons/logo.svg') }}" 
+        class="img-fluid rounded-circle me-3"
+        alt="Logo"
+        height="30px"
+        width="30px"
+        >
+        <a class="navbar-brand" href="/">Brain Tumor Detection</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/dataset">Dataset</a></li>
+          <li class="nav-item"><a class="nav-link" href="/documents">Documents</a></li>
+          <li class="nav-item"><a class="nav-link" href="/maps">Hospitals</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mt-5 mb-4">
+      <h3 class="text-center">Dataset Details</h3>
+      <p class="text-center text-muted">Information about the MRI image dataset used to train and test the model.</p>
+
+      <div class="mt-4">
+        <h5>&#x1F9E0; Dataset Summary</h5>
+        <ul>
+          <li>Total images: ~7000</li>
+          <li>Glioma: ~1,621</li>
+          <li>Meningioma: ~1,646</li>
+          <li>Pituitary: ~1,645</li>
+          <li>No Tumor: ~1,645</li>
+          <li>Format: JPG</li>
+          <li>Type: T1-weighted contrast-enhanced MRI brain scans</li>
+        </ul>
+
+        <h5>&#x1F517; Source</h5>
+        <p>The dataset used in this project is available on Kaggle:</p>
+        <a href="https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset"
+           target="_blank" 
+           class="btn btn-outline-primary btn-sm">
+          View Dataset on Kaggle
+        </a>
+
+        <h5 class="mt-4">&#9888;&#65039; Limitations</h5>
+        <p>This dataset is intended for demonstration. For clinical applications, much larger datasets with medical validation are required.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    <p class="mb-0">&copy; Brain Tumor Detection System</p>
+  </footer>
+</body>
+</html>
