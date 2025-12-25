@@ -9,26 +9,6 @@ This project detects brain tumors in brain MRI images using a Convolutional Neur
 It provides prediction confidence, batch upload functionality, downloadable PDF reports, and visualizes model results in a user-friendly interface.
 ________________________________________
 
-Project Structure
-
-Brain_Tumor_Detection_WebApp/
-├── static/
-│   ├── uploaded/         # Uploaded MRI images
-│   ├── docs/             # Project synopsis and diagrams
-│   ├── css/              # Stylesheets
-│   └── icons/            # Favicon and logo
-├── templates/
-│   ├── index.html        # Home page / upload page
-│   ├── documents.html    # Document download/view page
-│   └── other pages...
-├── model/
-│   └── multi_class_model.keras  # Trained multi-class CNN model
-├── flask_routes.py       # Flask route handlers
-├── logic.py              # Prediction logic
-├── app.py                # Flask app entry point
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
-
 Requirements
 •	Python 3.10+
 •	TensorFlow
@@ -74,4 +54,3 @@ ________________________________________
 
 Author
 Musab Salmani
-T.Y.B.Sc. Computer Science – Final Year Project (2025)
